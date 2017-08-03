@@ -2,65 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Forms Examples</title>
+    <title>Register with us</title>
+    <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-       <label><h1>Register With Us</h1></label>
-       <form method="GET" action="https://requestb.in/pu4ao2pu">
-           <br>
-       <div>
-       <label for="Username">Username</label>
-       <input name="Username" id="username" placeholder="What's your username">
-       </div>
-           <br>
-       <div>
-       <label for="Password">Password</label>
-       <input type="Password" name="Password" id="Password" placeholder="Type in password">
-       </div>
-           <br>
-       <div>
-       <label for="Bio">Bio</label>
-           <br>
-           <textarea name="Bio" id="Bio" rows="10" cols="100"></textarea>
-       </div>
-           <br>
+    <body>
+        <h1 class="fancy-header">Forms</h1>
+
+        <form method="POST" action="https://requestb.in/pu4ao2pu">
+        <br>
+            <div>
+                <label for="email">Email: </label>
+                <input type="text" id="email" placeholder="What's your email">
+            </div>
+       <br>
+            <div>
+                <label for="Password">Password: </label>
+                <input type="Password" name="Password" id="Password" placeholder="Type in password">
+            </div>
+       <br>
+            <div>
+                <label for="Bio">Bio</label>
+       <br>
+            <textarea name="Bio" id="Bio" rows="10" cols="100" placeholder="type in your bio.........."></textarea>
+            </div>
+       <br>
 
 
-       <label>How did you hear about us</label>
-       <label>
-           <input type="radio" name="a1" value="billboard">billboard
-       </label>
+            <label for>How did you hear about us? </label>
+            <label>
+            <input type="radio" name="a" value="billboard">billboard
+            </label>
 
+            <label>
+            <input type="radio" name="a" value="radio advertisement">radio advertisement
+            </label>
 
+            <label>
+            <input type="radio" name="a" value="internet advertisement">internet advertisement
+            </label>
 
-       <label>
-               <input type="radio" name="a2" value="radio advertisement">radio advertisement
-
-       </label>
-
-           <label>
-               <input type="radio" name="a3" value="internet advertisement">internet advertisement
-           </label>
-
-           <label>
-               <input type="radio" name="a4" value="other">other
-           </label>
-           <br>
-           <br>
-
-           <label for="browser">What web browser are you using?</label>
-           <select name="browser" id="browser">
-               <option value="google chrome">google chrome</option>
-               <option value="firefox">firefox</option>
-               <option value="opera">opera</option>
-               <option value="safari">safari</option></select>
-           <br>
-           <br>
-           <button type="submit">log in</button>
-
-
-
-
-   </form>
-</body>
+            <label>
+            <input type="radio" name="a" value="other">other
+            </label>
+       <br>
+       <br>
+            <label for="browser">What web browser are you using? </label>
+            <select name="browser" id="browser">
+            <option value="google chrome">google chrome</option>
+            <option value="firefox">firefox</option>
+            <option value="opera">opera</option>
+            <option value="safari">safari</option></select>
+       <br>
+       <br>
+       <button type="submit">log in</button>
+       </form>
+            <div>
+                <p>hello</p>
+                <p>good morning</p>
+                <p>good evening</p>
+                <p>good afternon</p>
+                <p>good night</p>
+            </div>
+    </body>
 </html>

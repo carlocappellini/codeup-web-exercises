@@ -1,0 +1,53 @@
+html {
+    background-image: url("../img/YFBPrld.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #abc586;
+    font-family: 'Julee', cursive;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #EE82EE;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.fancy-header {
+    font-family: Helvetica;
+    text-decoration: underline;
+}
+
+li {
+    list-style-type: square;
+}
+
+table, th, td {
+    border: 5px solid #ccC586;
+}
+table.center2 {
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    color: #abc586;
+}
+
+.center{
+    width:200px;
+    margin:0 auto;
+    text-align:left;
+}
