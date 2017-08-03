@@ -1,4 +1,4 @@
-html {
+body {
     background-image: url("../img/YFBPrld.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -21,7 +21,7 @@ h1, h2 {
     text-decoration: underline;
 }
 
-li {
+ul li {
     list-style-type: square;
 }
 
