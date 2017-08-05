@@ -1,0 +1,33 @@
+ html body {
+    background-size: cover;
+}
+ /*<table width="100%" style="height: 100%;" cellpadding="10" cellspacing="0" border="0"><tr>*/
+
+ /*<!-- ============ LEFT COLUMN (MENU) ============== -->*/
+
+ .column1 {
+     width: 75px;
+     height: 700px;
+     background-color: #999f8e;
+     float: left;
+     padding: 30px;
+ }
+
+ div.column2 {
+     margin:  30px;
+     background-color: #d2d8c7;
+     height: 750px;
+     padding-left: 120px;
+ }
+ a{
+     border-radius: 100px;
+ }
+
+ a:link {
+
+     color: black;
+ }
+ h2, h1 {
+     padding-top: 20px;
+ }
+

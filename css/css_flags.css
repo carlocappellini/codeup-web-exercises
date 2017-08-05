@@ -1,0 +1,26 @@
+.usa{
+    border: 1px solid white;
+    width: 220px;
+    height:103px;
+}
+
+.red-white{
+    border: 5px solid crimson;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.star{
+    border: 1px solid;
+    background-color: darkblue;
+    width: 90px;
+    height: 68px;
+    float: left;
+}
+p#star {
+    border: 1px;
+    color: white;
+    font-size: 12px;
+    margin-bottom: 20px;
+    margin-top: -2px;
+}
