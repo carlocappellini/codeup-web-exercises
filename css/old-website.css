@@ -1,33 +1,79 @@
  html body {
-    background-size: cover;
-}
- /*<table width="100%" style="height: 100%;" cellpadding="10" cellspacing="0" border="0"><tr>*/
+     background-size: cover;
+     font-family: 'Indie Flower', cursive;
+     text-align: center;
 
- /*<!-- ============ LEFT COLUMN (MENU) ============== -->*/
+ }
 
  .column1 {
      width: 75px;
      height: 700px;
-     background-color: #999f8e;
      float: left;
      padding: 30px;
+     background-size: cover;
+     background: red; /* For browsers that do not support gradients */
+     background: -webkit-radial-gradient(circle, violet, darkslateblue, green); /* Safari */
+     background: -o-radial-gradient(circle, violet, darkslateblue, green); /* Opera 11.6 to 12.0 */
+     background: -moz-radial-gradient(circle, violet, darkslateblue, green); /* Firefox 3.6 to 15 */
+     background: radial-gradient(circle, violet, darkslateblue, green); /* Standard syntax */
+     border: 2px solid black;
+
+
+
  }
 
  div.column2 {
-     margin:  30px;
-     background-color: #d2d8c7;
-     height: 750px;
+     border: 2px solid black;
+     height: 760px;
+     background-size: cover ;
      padding-left: 120px;
+     background: yellow; /* For browsers that do not support gradients */
+     background: linear-gradient(to right, deepskyblue, mediumseagreen, violet); /* Standard syntax */
+
  }
- a{
-     border-radius: 100px;
+
+ button {
+     border-radius: 10px;
+     margin: 20px;
+     background-color: #ffa500;
+
+     animation-name: example;
+     animation-duration: 4s;
+     font-weight: bold;
  }
+
+ /* Standard syntax */
+ @keyframes example {
+     from {background-color: crimson;}
+     to {background-color: sandybrown;}
+ }
+ p{
+     font-size: 25px;
+ }
+
 
  a:link {
 
      color: black;
- }
- h2, h1 {
-     padding-top: 20px;
- }
+     text-decoration: none;
 
+ }
+  h1 {
+
+     padding-top: 20px;
+     color: gold;
+     text-decoration: underline wavy;
+
+ }
+  
+  .footer {
+
+      background: linear-gradient(to right, deepskyblue, mediumseagreen, violet );
+      border: 2px solid black;
+  }
+
+  li{
+      display: inline;
+      margin: 20px;
+
+  }

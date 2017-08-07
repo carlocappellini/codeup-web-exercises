@@ -7,8 +7,8 @@
     color: #fff;
     font-size: 15px;
     font-weight: bold;
-    float: left;
     position: relative;
+    float: left;
 }
 
 .box>img {
@@ -16,10 +16,11 @@
     top: -40px;
     right: -40px;
 }
-
 .box:nth-child(4){
     clear: left;
 }
+
+
 
 #red {
     background-color: #ff0000 ;
