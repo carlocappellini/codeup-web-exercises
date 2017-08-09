@@ -1,0 +1,48 @@
+* {
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.row {
+    width: 100%;
+    overflow: auto;
+    margin-bottom: 10px;
+
+
+
+}
+
+.column-one-half {
+    float: left;
+    width: 50%;
+    background-color: crimson;
+
+}
+
+.column-one-third {
+    width: 33.33%;
+    background-color: sandybrown;
+    float: left;
+    overflow: auto;
+
+    margin-left: 0;
+}
+
+.column-one-fourth {
+    width: 25%;
+    background-color: gold;
+    float: left;
+
+}
+
+.column-one-eighth {
+    width: 12.5%;
+    background-color: violet;
+    float: left;
+}
