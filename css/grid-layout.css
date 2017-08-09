@@ -1,28 +1,20 @@
-* {
-    border: 1px solid black;
-    box-sizing: border-box;
-}
+
 
 .container {
     width: 100%;
-    padding: 10px;
+    padding: 0;
     font-size: 20px;
     text-align: center;
 }
 .row {
     width: 100%;
-    overflow: auto;
-    margin-bottom: 10px;
-
-
+    box-sizing: border-box;
 
 }
 
 .column-one-half {
     float: left;
     width: 50%;
-    background-color: crimson;
-
 }
 
 .column-one-third {
@@ -45,4 +37,18 @@
     width: 12.5%;
     background-color: violet;
     float: left;
+}
+
+.column-two-thirds {
+    width: 66%;
+
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        width: 100%;
+    }
+    .column-one-half, .column-one-third, .column-one-fourth, .column-one-eighth, .column-two-thirds{
+        width: 100%;
+    }
 }
