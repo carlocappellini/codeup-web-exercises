@@ -2,6 +2,13 @@
     background-image: url('../img/pizza.png');
     background-size: cover;
 
+
+}
+/* h1 is inside jumbotron ,to modify the size to extent the h1 title,i used  padding-left: 0 !important; and
+ padding right: 0 !important; this is because h1 is inside .jumbotron maybe good idea to not use h1 inside of <div>  */
+.jumbotron {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .hero-pizza-title {
