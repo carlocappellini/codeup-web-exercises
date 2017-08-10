@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pizza World</title>
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet"
@@ -38,21 +38,19 @@
                     <button type="submit" class="btn btn-default">Stores near you</button>
                 </form>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Sign up</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign up</a></li>
                 </ul>
 
-                </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
 
 
-    <div class="jumbotron">
-        <div class="panel-heading">
-            <h1>Welcome to pizza world!</h1>
-        </div>
+    <div class="jumbotron hero-pizza">
+            <h1 class="hero-pizza-title">Welcome to pizza world!</h1>
+
     </div>
-    <div>
+
         <h2>Build your own pizza</h2>
         <ul class="nav nav-tabs">
 
@@ -61,27 +59,27 @@
             <li role="presentation"><a href="#"><span class="badge"> 3</span>Toppings</a></li>
 
         </ul>
-    </div>
+
 
     <div class="panel panel-primary">
         <div class="panel-heading">Choose size and crust</div>
         <div class="panel-body">
             <div class="panel panel-default">
                 <div class="panel-heading">Had tossed</div>
+                <div class="panel-body">Garlic seasoned crust with...</div>
                 <ul class="list-group">
-                    <li class="list-group-item">Garlic seasoned crust with a rich buttery taste</li>
-                    <li class="list-group-item list-group-item-info"><input type="radio" name="p"> Small(10')</li>
-                    <li class="list-group-item list-group-item-info"><input type="radio" name="p"> Medium(12')</li>
+                    <li class="list-group-item list-group-item-info"><label><input type="radio" name="p"> Small(10")</label></li>
+                    <li class="list-group-item list-group-item-info"><label><input type="radio" name="p"> Medium(12")</label></li>
                 </ul>
 
             </div>
 
             <div class="panel panel-default">
                 <div class="panel-heading">Thin crust</div>
+                <div class="panel-body">Thin enough for the optimum crispy to crunchy</div>
                 <ul class="list-group">
-                    <li class="list-group-item">Thin enough for the optimum crispy to crunchy</li>
-                    <li class="list-group-item list-group-item-info"><input type="radio" name="s"> Medium(12')</li>
-                    <li class="list-group-item list-group-item-info"><input type="radio" name="s"> Large(14')</li>
+                    <li class="list-group-item list-group-item-info"><label><input type="radio" name="s"> Medium(12")</label></li>
+                    <li class="list-group-item list-group-item-info"><label><input type="radio" name="s"> Large(14")</label></li>
                 </ul>
 
 
@@ -100,7 +98,7 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Cheese?</div>
                 <ul class="list-group">
-                    <li class="list-group-item list-group-item-info">Cheese?<select class="form-control">
+                    <li class="list-group-item list-group-item-info"><label>Cheese?</label><select class="form-control">
                         <option>Light</option>
                         <option>Extra</option>
                         <option>provolone</option>
@@ -111,18 +109,23 @@
             <div class="panel panel-default">
                 <div class="panel-heading">Sauce?</div>
                 <ul class="list-group">
-                    <li class="list-group-item list-group-item-info">Sauce<select class="form-control">
+                    <li class="list-group-item list-group-item-info">
+                        <label>Sauce</label>
+                        <select class="form-control">
                         <option>Tomato sauce</option>
                         <option>Marinara sauce</option>
                         <option>BBQ sauce</option>
-                    </select></li>
+                    </select>
+                    </li>
 
-                    <li class="list-group-item list-group-item-info">How much?<select class="form-control">
+                    <li class="list-group-item list-group-item-info">
+                        <label>How much?</label><select class="form-control">
                         <option>Light</option>
                         <option>Normal</option>
                         <option>Extra</option>
                         <option>Double</option>
-                    </select></li>
+                    </select>
+                    </li>
                 </ul>
             </div>
 
@@ -131,11 +134,13 @@
 
 
         <div class="panel-footer text-right">
+            <div class="btn-group" role="group" aria-label="...">
 
             <a class="btn btn-primary"><span class="glyphicon glyphicon-triangle-left " aria-hidden="true"></span>Previous
                 step</a>
             <a class="btn btn-primary"> Next step<span class="glyphicon glyphicon-triangle-right
 " aria-hidden="true"></span></a>
+            </div>
         </div>
     </div>
     <div class="panel panel-primary">
@@ -194,3 +199,4 @@
 
 </body>
 </html>
+
