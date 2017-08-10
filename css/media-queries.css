@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    box-sizing: border-box;
 }
 
 .alert-info.hidden-on-mobile {
@@ -41,7 +40,12 @@ li {
 
 @media screen and (max-width:768px) {
 
-
+        .container{
+            width: 100%;
+        }
+        .column-one-half, .column-one-third, .column-one-fourth, .column-one-eighth, .column-two-thirds{
+            width: 100%;
+        }
     .nav-links li {
         display: block;
         background-color: lightgray;
