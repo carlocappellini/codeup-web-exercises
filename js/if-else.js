@@ -32,4 +32,7 @@ if(color === 'red') {
 
 // TODO: Using the ternary operator, conditionally log a statement that
 //       says whether the random color matches your favorite color.
-(color === favorite) ? console.log(color + " is my favorite color"): console.log(color + " is not my favorite color")
+
+var msg = (color === favorite) ?  "my favorite color" : "is not my favorite color";
+
+console.log(msg);
