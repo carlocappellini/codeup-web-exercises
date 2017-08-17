@@ -7,6 +7,8 @@
 <body>
 
 <script>
+
+//    .repeat is a method used fr strings ""
 //for (var i = 1; i <= 10; i++) {
 //if (i === 10) {
 //var zero = "0";
@@ -16,13 +18,26 @@
 //console.log(i.toString().repeat(i));
 //}
 //}
-//
+
+
+//this solution gives same result and its better
+for (var i = 1; i <= 10; i++) {
+    console.log((i % 10).toString().repeat(i));
+}
+
+
+
+
+
+
 //for (var i = 100; i > 5;i = i - 5){
 //console.log(i)
 //}
 //
 //var i = 10;
 //-------------------------
+
+
 
 
 
@@ -63,7 +78,7 @@
 </script>
 <!--<script src="js/for_loops.js"></script>-->
 <!--<script src="js/break_and_continue.js"></script>-->
-<script src="js/while.js"></script>
+<!--<script src="js/while.js"></script>-->
 
 
 
