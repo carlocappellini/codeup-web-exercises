@@ -3,12 +3,16 @@
 
     // TODO: Create an array of 4 people's names using literal array notation, in a variable called 'names'.
 
-    var names = new Array ("Carlo", "Robert", "Pablo", "Hugo");
+    var names = ["Carlo", "Robert", "Pablo", "Hugo"];
 
     // TODO: Create a log statement that will log the number of elements in the names array.
-console.log (names.length);
+// console.log (names.length);
     // TODO: Create log statements that will print each of the names array elements individually.
-
+    names.forEach(function (element, index) {
+        console.log(element + " " + names[index]);
+        names[index] = element;
+    });
+    console.log(names);
     console.log(names[0]);
     console.log(names[1]);
     console.log(names[2]);
