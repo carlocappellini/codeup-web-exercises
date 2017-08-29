@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bonus Practice</title>
+</head>
+<body>
+<script>
+
+
+    var people = ["oliver", "barry", "jessica", "clark"]
+
+    function generate() {
+        newSelect = document.createElement("select")
+        newSelect.id = "friend";
+        newSelect.name = "friend";
+        for (var i = 1; i <= people.length; i++) {
+            var option = document.createElement("option");
+            option.value = i;
+            option.innerHTML = people[i - 1];
+            newSelect.appendChild(option);
+        }
+
+
+        console.log(newSelect)
+
+    }
+
+    generate();
+
+
+    var luckyNumber;
+    var array = [0, 0, 0, 0, 0, 0];
+    for (var i = 1; i < 100; i++) {
+        luckyNumber = Math.floor(Math.random() * 6);
+        console.log(luckyNumber);
+        if (luckyNumber[0]) {
+            console.log(luckyNumber + i)
+
+
+        }
+
+    }
+
+
+</script>
+
+</body>
+</html>
