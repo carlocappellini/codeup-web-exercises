@@ -16,7 +16,7 @@ var border = document.getElementById("map").style.border = "3px solid black"
 //     ['Chios peruvian grill',34.2117265, -118.46688419999998]
 // ]
 // create var map using  google and map object properties
-// than create options with zoom and center object with lat and lng
+// than create options with zoom and center object with lat an
 // Create lat and long for our marker position
 var home = {lat: 29.4571425, lng: -98.6839018};
 
