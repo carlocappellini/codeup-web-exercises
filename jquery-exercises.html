@@ -5,7 +5,16 @@
     <title>Jquery Exercises</title>
 </head>
 <body>
-
+<h1 id="header" class="">hello world</h1>
+<h2 class="codeup">Code Up</h2>
+<p id="paragraph" class="codeup">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae dicta fugit
+    neque nostrum optio, perferendis quae quis, reprehenderit repudiandae rerum, temporibus vitae voluptas. Alias
+    consequatur nisi quia sint voluptatem.</p>
+<ul>
+    <li>apples</li>
+    <li>bananas</li>
+    <li>oranges</li>
+</ul>
 <!--<script-->
 <!--src="https://code.jquery.com/jquery-2.2.4.min.js"-->
 <!--integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="-->
@@ -18,7 +27,27 @@
 
 <script src="js/jquery-2.2.4.min.js"></script>
 <script>
-    $(alert("hello"))
+    //    $(alert("hello"));
+    //
+    //    function  giveAlert() {
+    //        var p = (document).getElementById("header")
+    //
+    //        alert(document.getElementById("header").innerHTML)
+    //
+    //    }
+    //    giveAlert()
+
+    //    $('.codeup').css('border', '1px solid red')
+    $('li').css('font-size', '30px')
+    $('li').css('list-style-type', 'none')
+
+    function highlight() {
+        $('h1, p, li').css('background-color', 'green')
+    }
+
+    var $h1 = $(document.getElementById("header"))
+    alert(document.getElementById("header").innerHTML)
+    highlight()
 </script>
 </body>
 </html>
