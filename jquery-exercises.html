@@ -11,9 +11,9 @@
     neque nostrum optio, perferendis quae quis, reprehenderit repudiandae rerum, temporibus vitae voluptas. Alias
     consequatur nisi quia sint voluptatem.</p>
 <ul>
-    <li>apples</li>
-    <li>bananas</li>
-    <li>oranges</li>
+    <li class="w1">apples</li>
+    <li class="w2">bananas</li>
+    <li class="w3">oranges</li>
 </ul>
 <!--<script-->
 <!--src="https://code.jquery.com/jquery-2.2.4.min.js"-->
@@ -37,17 +37,44 @@
     //    }
     //    giveAlert()
 
-    //    $('.codeup').css('border', '1px solid red')
-    $('li').css('font-size', '30px')
-    $('li').css('list-style-type', 'none')
+    //    //    $('.codeup').css('border', '1px solid red')
+    //    $('li').css('font-size', '30px')
+    //    $('li').css('list-style-type', 'none')
+    //
+    //    function highlight() {
+    //        $('h1, p, li').css('background-color', 'green')
+    //    }git
+    //
+    //    var $h1 = $(document.getElementById("header"))
+    //    alert(document.getElementById("header").innerHTML)
+    //    highlight()
 
-    function highlight() {
-        $('h1, p, li').css('background-color', 'green')
-    }git
+    (function () {
+        var h1 = $("#header");
 
-    var $h1 = $(document.getElementById("header"))
-    alert(document.getElementById("header").innerHTML)
-    highlight()
+        h1.click(function () {
+            console.log("click");
+            $(this).css("background-color", "red")
+        });
+        $("#paragraph").dblclick(function () {
+            var p = $("#paragraph")
+            p.css("background-color", "green")
+
+        });
+
+//        THIS FUNCTION CODE WILL DISPLAY THE COLOR OF LI ONCE I HOVER OUT
+        var hoverOut = function () {
+            $(this).css("color", 'black')
+        };
+
+
+//          THIS CODE WILL DISPLAY THR COLOR ON LI'S ONCE I HOVER
+        $('.w1, .w2, .w3').hover(function () {
+            $(this).css('color', 'blue')
+
+        }, hoverOut)
+    })();
+
 </script>
 </body>
 </html>

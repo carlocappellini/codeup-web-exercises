@@ -144,30 +144,30 @@
 
 // <!--this code makes the color change once we click itdoble click and hover, by targerting id and using diferent funtions to chnage the color when we click-->
 
-var height = document.getElementById("box").style.height = "300px";
-var width = document.getElementById("box").style.width = "300px";
-(function () {
-    var box = $("#box");
-
-    box.click(function () {
-        console.log("click")
-        $(this).css("background-color", "red")
-
-
-    })
-
-    var changeToblue = function () {
-        $(this).css("background-color", "blue")
-    };
-
-    box.dblclick(changeToblue);
-
-    var hoverOut = function () {
-        $(this).css("background-color", 'green')
-    }
-
-    box.hover(function () {
-        $(this).css("background-color", 'red')
-
-    }, hoverOut)
-})();
+// var height = document.getElementById("box").style.height = "300px";
+// var width = document.getElementById("box").style.width = "300px";
+// (function () {
+//     var box = $("#box");
+//
+//     box.click(function () {
+//         console.log("click")
+//         $(this).css("background-color", "red")
+//
+//
+//     })
+//
+//     var changeToblue = function () {
+//         $(this).css("background-color", "blue")
+//     };
+//
+//     box.dblclick(changeToblue);
+//
+//     var hoverOut = function () {
+//         $(this).css("background-color", 'green')
+//     }
+//
+//     box.hover(function () {
+//         $(this).css("background-color", 'red')
+//
+//     }, hoverOut)
+// })();
