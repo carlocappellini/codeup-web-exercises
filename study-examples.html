@@ -6,7 +6,48 @@
 </head>
 <body>
 
-<script src="js/study-examples.js"></script>
+
+<div id="box"></div>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+<script>
+
+
+    //
+    <!--this code makes color chnage by targerting id and using funtions to chnage the color when we click-->
+    var height = document.getElementById("box").style.height = "300px";
+    var width = document.getElementById("box").style.width = "300px";
+    (function () {
+        var box = $("#box");
+
+        box.click(function () {
+            console.log("click")
+            $(this).css("background-color", "red")
+
+
+        })
+
+        var changeToblue = function () {
+            $(this).css("background-color", "blue")
+        };
+
+        box.dblclick(changeToblue);
+
+        var hoverOut = function () {
+            $(this).css("background-color", 'green')
+        }
+
+        box.hover(function () {
+            $(this).css("background-color", 'red')
+
+        }, hoverOut)
+    })();
+
+
+</script>
 
 </body>
 </html>

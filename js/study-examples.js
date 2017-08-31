@@ -43,42 +43,131 @@
 // ]
 //  */ TEST ASSESSMENT PROBLEMS 08/30/2017
 
-var isNegative = function (num) {
-    return num < 0;
-};
+// var isNegative = function (num) {
+//     return num < 0;
+// };
+//
+// var average = function (arr) {
+//     return (arr.reduce(function (acc, value) {
+//         return acc + value;
+//     }) / arr.length);
+// };
+//
+// var countOdds = function (arr) {
+//     return (arr.filter(function (index) {
+//         return index % 2 === 1;
+//     }).length);
+// };
+//
+// var convertNameToObject = function (name) {
+//     return {
+//         "firstName": name.split(" ")[0],
+//         "lastName": name.split(" ")[1]
+//     }
+// };
+//
+// var fiveTo = function (num) {
+//     for (var i = 5, result = [i]; i !== num; (num >= 5) ? result.push(++i) : result.push(--i)) ;
+//
+//     return result;
+// };
+//
+// var upperCaseLastNames = function (arr) {
+//     return arr.map(function (a) {
+//         return {
+//             "firstName": a.firstName,
+//             "lastName": a.lastName.replace(/\w\S*/g, function (txt) {
+//                 return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+//             })
+//         };
+//     })
+// };
 
-var average = function (arr) {
-    return (arr.reduce(function (acc, value) {
-        return acc + value;
-    }) / arr.length);
-};
 
-var countOdds = function (arr) {
-    return (arr.filter(function (index) {
-        return index % 2 === 1;
-    }).length);
-};
+//SEPARATION----------------------------------
 
-var convertNameToObject = function (name) {
-    return {
-        "firstName": name.split(" ")[0],
-        "lastName": name.split(" ")[1]
-    }
-};
 
-var fiveTo = function (num) {
-    for (var i = 5, result = [i]; i !== num; (num >= 5) ? result.push(++i) : result.push(--i)) ;
+//another solution to the assessment
 
-    return result;
-};
+//function isNegative(number) {
+//        return number < 0;
+//    }
+//
+//function average(numbers) {
+//        var sum = 0;
+//        numbers.forEach(function (number) {
+//                sum += number;
+//            });
+//        return sum / numbers.length;
+//    }
+//
+//function countOdds(numbers) {
+//        var odds = 0;
+//        numbers.forEach(function (number) {
+//                odds += number % 2 !== 0 ? 1 : 0;
+//            });
+//        return odds;
+//    }
+//
+//function convertNameToObject(name) {
+//        var parts = name.split(" ");
+//        return {
+//                firstName: parts[0],
+//                lastName: parts[1]
+//        };
+//    }
+//
+//function fiveTo(limit) {
+//        var numbers = [];
+//        var isLessThan5 = limit < 5;
+//        var increment = isLessThan5 ? -1 : 1;
+//        for (var i = 5; isLessThan5 ? i >= limit : i <= limit; i += increment) {
+//                numbers.push(i);
+//            }
+//        return numbers;
+//    }
+//
+//function upperCaseLastNames(people) {
+//        var correctedNames = [];
+//        people.forEach(function (person) {
+//                correctedNames.push({
+//                        firstName: person.firstName,
+//                        lastName: person.lastName[0].toUpperCase() + person.lastName.substring(1)
+//                })
+//            });
+//      return correctedNames;
+/  }/
 
-var upperCaseLastNames = function (arr) {
-    return arr.map(function (a) {
-        return {
-            "firstName": a.firstName,
-            "lastName": a.lastName.replace(/\w\S*/g, function (txt) {
-                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-            })
-        };
+
+//another example code-------------------------------------
+
+
+// <!--this code makes the color change once we click itdoble click and hover, by targerting id and using diferent funtions to chnage the color when we click-->
+
+var height = document.getElementById("box").style.height = "300px";
+var width = document.getElementById("box").style.width = "300px";
+(function () {
+    var box = $("#box");
+
+    box.click(function () {
+        console.log("click")
+        $(this).css("background-color", "red")
+
+
     })
-};
+
+    var changeToblue = function () {
+        $(this).css("background-color", "blue")
+    };
+
+    box.dblclick(changeToblue);
+
+    var hoverOut = function () {
+        $(this).css("background-color", 'green')
+    }
+
+    box.hover(function () {
+        $(this).css("background-color", 'red')
+
+    }, hoverOut)
+})();
