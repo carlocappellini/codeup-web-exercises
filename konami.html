@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Konami Code</title>
+</head>
+<body id="body">
+<header></header>
+<div class="container">
+    <p>Please Type Koonami Code:</p>
+
+    <p id="lives"></p>
+
+    <form>
+        <input type="text" id="textfield" name="textfield" placeholder="Type Here"/>
+        <button class="btn">submit</button>
+    </form>
+</div>
+
+
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+
+<script>
+    "use strict";
+
+    //    alert("Enter Koonami Code");
+    //    var redBack = (document).getElementById("container").style.backgroundColor = "red";
+    //
+
+    var KONAMI = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65, 13];
+
+    var keys = 0;
+
+    $(document).keyup(function (key) {
+        console.log(key.keyCode);
+
+        if (key.keyCode === KONAMI[keys]) {
+            keys++;
+
+            if (keys === KONAMI.length)
+                alert("30 lives to live")
+
+            var lives = document.getElementById('lives')
+
+            var body = document.getElementById('body');
+
+            body.style.backgroundColor = "red"
+
+            lives.innerHTML = "you got it"
+
+
+        } else {
+            document.getElementById('lives').innerHTML = "";
+
+            document.getElementById('body').style.backgroundColor = "green"
+
+            alert("FATALITY");
+
+            keys = 0
+
+        }
+
+
+    });
+
+
+</script>
+</body>
+</html>
