@@ -193,3 +193,112 @@
 
 //end koonami
 
+
+// example 4
+
+// /* Declare the function 'myFunc' */
+// function myFunc(theObject) {
+//     theObject.brand = "Toyota";
+// }
+//
+// /*
+//  * Declare variable 'mycar';
+//  * create and initialize a new Object;
+//  * assign reference to it to 'mycar'
+//  */
+// var mycar = {
+//     brand: "Honda",
+//     model: "Accord",
+//     year: 1998
+// };
+//
+// /* Logs 'Honda' */
+// console.log(mycar.brand);
+//
+// /* Pass object reference to the function */
+// myFunc(mycar);
+//
+// /*
+//  * Logs 'Toyota' as the value of the 'brand' property
+//  * of the object, as changed to by the function.
+//  */
+// console.log(mycar.brand);
+
+// end example 4
+
+
+// Executing Functions Samples
+
+
+// var myFunction = function() {
+//     statements
+// }
+//
+// var myFunction = function namedFunction(){
+//     statements
+// }
+//-------------------------------
+
+
+//different type of functions
+
+//Function constructor vs. function declaration vs. function expression
+
+// Compare the following:
+//
+//     A function defined with the Function constructor assigned to the variable multiply:
+//
+//     var multiply = new Function('x', 'y', 'return x * y');
+// A function declaration of a function named multiply:
+//
+//     function multiply(x, y) {
+//         return x * y;
+//     } // there is no semicolon here
+// A function expression of an anonymous function assigned to the variable multiply:
+//
+//     var multiply = function(x, y) {
+//         return x * y;
+//     };
+// A function expression of a function named func_name assigned to the variable multiply:
+//
+//     var multiply = function func_name(x, y) {
+//         return x * y;
+//     };
+
+//--------------------------------------------
+
+
+//functions constructor
+
+// var foo = (new Function("var bar = \'FOO!\';\nreturn(function() {\n\talert(bar);\n});"))();
+// foo(); // The segment "function() {\n\talert(bar);\n}" of the function body string is not re-parsed.
+//
+// //=---------------------------
+
+
+//if statements functions
+
+//
+//
+// In non-strict code, function declarations inside blocks behave strangely. For example:
+//
+//     if (shouldDefineZero) {
+//         function zero() {     // DANGER: compatibility risk
+//             console.log("This is zero.");
+//         }
+//     }
+//
+// ES2015 says that if shouldDefineZero is false, then zero should never be defined, since the block never executes. However, it's a new part of the standard. Historically, this was left unspecified, and some browsers would define zero whether the block executed or not.
+
+//
+// in strict mode, all browsers that support ES2015 handle this the same way: zero is defined only if shouldDefineZero is true, and only in the scope of the if-block.
+//
+//     A safer way to define functions conditionally is to assign a function expression to a variable:
+//
+//     var zero;
+// if (0) {
+//     zero = function() {
+//         console.log("This is zero.");
+//     };
+// }
+// //=------------------------------
