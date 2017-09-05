@@ -7,9 +7,39 @@
         .invisible {
             display: none;
         }
+
+        .images {
+            display: inline-block;
+        }
+
+        .row {
+            width: 50%;
+            display: flex;
+            box-sizing: border-box;
+        }
     </style>
 </head>
 <body>
+
+
+<div class="row">
+
+    <div class="images" id="picture1">
+        <img src="img/Careful.jpg" alt="">
+        <button class="button1" id="btn-one">press</button>
+    </div>
+
+
+    <div class="images" id="picture2">
+        <img src="img/careful.jpg" alt="">
+        <button class="btn" id=>press</button>
+    </div>
+    <div class="images" id="picture3">
+        <img src="img/Cliff.jpg" class="imagen" alt="">
+        <button class="btn" id=>press</button>
+    </div>
+</div>
+
 <button id="show-faqs">show</button>
 <h1>National Parks FAQ's</h1>
 <dl class="hidden">
@@ -61,12 +91,67 @@
     <dt>10. Waht is your Favorite National Park to visit?</dt>
     <br>
     <dd class="invisible"><input type="text" id="park-name" name="park-name ">
-        <button class="btn">submit</button>
+        <button class="btn2">submit</button>
     </dd>
     <br>
 
 
 </dl>
+<button id="btn">click</button>
+
+<h3>Yellow Stone</h3>
+<ul>
+    <li class="purple">
+        Yellowstone is bigger than two U.S. states.
+    </li>
+
+    <li>One of Yellowstone’s earliest explorers was stranded there for 37 days.
+    </li>
+
+    <li>
+        The park sits atop the largest supervolcano in North America.
+    </li>
+
+    <li class="yellow">
+        A painter played a crucial role in Yellowstone’s creation.
+    </li>
+
+</ul>
+
+<h3>Grand Canyon</h3>
+<ul>
+    <li class="purple">
+        THE GRAND CANYON CREATES ITS OWN WEATHER
+    </li>
+
+    <li>
+        WE DON'T REALLY KNOW HOW OLD IT IS
+    </li>
+
+    <li>
+        THERE ARE NO DINOSAUR BONES IN THE GRAND CANYON
+    </li>
+
+    <li class="yellow">
+        THERE ARE LOTS OF OTHER FOSSILS IN THE AREA
+    </li>
+
+</ul>
+<h3>Zion National Park</h3>
+<ul>
+    <li class="purple">
+        Before it was a national park, Zion was a national monument, and it’s name wasn’t Zion
+    </li>
+    <li>
+        Zion is home to one of the greatest engineering feats of modern times
+    </li>
+    <li>
+        Zion is more than just slot canyons and amazing hikes -- it also protects archeological sites.
+    </li>
+    <li class="yellow">
+        Zion’s Angels Landing provides spectacular views, but it’s one of the world’s most dangerous
+    </li>
+</ul>
 
 <script
         src="https://code.jquery.com/jquery-3.2.1.min.js"
@@ -88,11 +173,35 @@
 
         });
 
-        $(".btn").click(function () {
+        $(".btn2").click(function () {
             alert("error")
-            $(".btn").hide()
+            $(".btn2").hide()
             $("#park-name").hide()
             $("*").css("background-image", "url(https://cdn.pixabay.com/photo/2012/12/04/07/36/background-68622_1280.jpg)")
+
+        })
+
+        $("#btn").click(function () {
+            $(".yellow").css("background-color", "yellow")
+
+
+        })
+
+        $("h3").click(function () {
+            $("li").css("font-weight", "bold")
+
+        })
+
+        $("#btn").click(function () {
+            $("#btn").toggleClass(a)
+        })
+
+        $("li").click(function () {
+            $(".purple").css("background-color", "purple")
+
+        })
+        $(".button1").on("click", function () {
+            $("#picture1").css("background-image", "url(../img/ballon.jpg)")
 
         })
 
