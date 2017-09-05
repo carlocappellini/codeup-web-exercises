@@ -9,11 +9,15 @@
         }
 
         .images {
-            display: inline-block;
+
+            width: 25%;
+        }
+
+        img {
+            width: 80%;
         }
 
         .row {
-            width: 50%;
             display: flex;
             box-sizing: border-box;
         }
@@ -26,17 +30,18 @@
 
     <div class="images" id="picture1">
         <img src="img/Careful.jpg" alt="">
-        <button class="button1" id="btn-one">press</button>
+        <button class="button" id="btn-one">press</button>
     </div>
 
 
     <div class="images" id="picture2">
-        <img src="img/careful.jpg" alt="">
-        <button class="btn" id=>press</button>
+        <img src="img/candycamara.jpg" alt="">
+        <button class="button" id=>press</button>
     </div>
+
     <div class="images" id="picture3">
         <img src="img/Cliff.jpg" class="imagen" alt="">
-        <button class="btn" id=>press</button>
+        <button class="button" id=>press</button>
     </div>
 </div>
 
@@ -174,36 +179,37 @@
         });
 
         $(".btn2").click(function () {
-            alert("error")
-            $(".btn2").hide()
-            $("#park-name").hide()
+            alert("error");
+            $(".btn2").hide();
+            $("#park-name").hide();
             $("*").css("background-image", "url(https://cdn.pixabay.com/photo/2012/12/04/07/36/background-68622_1280.jpg)")
 
-        })
+        });
+
+//        $("ul").click(function () {
+//            $(".yellow").css("background-color", "yellow")
+
+
+//        });
+
+        $("h3").on("click", function () {
+            $(this).next().children().first().css("font-weight", "bold")
+
+        });
 
         $("#btn").click(function () {
-            $(".yellow").css("background-color", "yellow")
+            $("#btn").toggleClass()
+        });
 
 
-        })
+        $("li").on("click", function () {
+            $(this).parent().children().first().css("color", 'red')
 
-        $("h3").click(function () {
-            $("li").css("font-weight", "bold")
+        });
 
-        })
-
-        $("#btn").click(function () {
-            $("#btn").toggleClass(a)
-        })
-
-        $("li").click(function () {
-            $(".purple").css("background-color", "purple")
-
-        })
-        $(".button1").on("click", function () {
-            $("#picture1").css("background-image", "url(../img/ballon.jpg)")
-
-        })
+        $(".button").on("click", function () {
+            $("#btn1").attr('src', 'img/candycamara.jpg')
+        });
 
 
     })();
