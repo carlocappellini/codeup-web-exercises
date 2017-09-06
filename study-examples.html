@@ -6,20 +6,22 @@
 </head>
 <body>
 
-<h1>hello</h1>
-<!--konami exercise-->
-<header>
-    <!--username: Carlo-->
-</header>
+<!--<h1>hello</h1>-->
+<!--&lt;!&ndash;konami exercise&ndash;&gt;-->
+<!--<header>-->
+<!--&lt;!&ndash;username: Carlo&ndash;&gt;-->
+<!--</header>-->
 
 <!--end see js-->
 
 <!--diffrent example 2-->
-<form action="#">
-    <input type="text" id="name" name="name>">
-    <button>submit</button>
-</form>
+<!--<form action="#">-->
+<!--<input type="text" id="name" name="name>">-->
+<!--<button>submit</button>-->
+<!--</form>-->
 
+<input type="button" id="#press" value="hide">
+<p class="paragraph" id="content">hello look at me</p>
 
 <!--end 2-->
 
@@ -34,7 +36,7 @@
 
 <script>
 
-    $("h1").hide(5000)
+    //    $("h1").hide(5000)
     //    (function () {
     //
     //        var nameTxt = $('#name')
@@ -47,6 +49,7 @@
     //    })()
 
     //   different example 1
+    //
     //
     //
     //
@@ -84,7 +87,18 @@
     // end 1
 
     //    different example 2
+    $("input").click(function () {
+        $("input").attr("value")
+        $("p").toggle();
 
+
+        if ($("input").attr("value") == "hide") {
+            ("input").attr("value", "show")
+        } else if ($("input").attr("value") == "show") {
+            ("input").attr("value", "hide")
+        }
+
+    });
 
 
 

@@ -141,7 +141,7 @@
 //                })
 //            });
 //      return correctedNames;
-/  }/
+// /  }/
 
 
 //another example code-------------------------------------
@@ -302,3 +302,51 @@
 //     };
 // }
 // //=------------------------------
+
+
+//POKEMON API
+// Pokemon API example
+
+
+//
+// var request = $.ajax("http://pokeapi.co/api/v2/pokemon/1/", {
+//     beforeSend: function () {}  // this lines solves the problem with CORS
+// });
+// request.done(showPokemonInformation);
+//
+// function showPokemonInformation (pokemon) {
+//     console.log(pokemon.name);
+//     pokemon.abilities.forEach(function (ability) {
+//         console.log(ability.ability.name);
+//     });
+// }
+//
+//
+// var request = $.ajax("http://pokeapi.co/api/v2/pokemon/1/", {
+//     beforeSend: function () {}  // this lines solves the problem with CORS
+// });
+// request.done(showPokemonInformation);
+//
+// function showPokemonInformation (pokemon) {
+//     console.log(pokemon.name);
+//     pokemon.abilities.forEach(function (ability) {
+//         console.log(ability.ability.name);
+//     });
+// }
+// ​
+
+
+//--------finish pokemon api/
+
+
+// Splice
+
+// var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+//
+// myFish.splice(2, 0, 'drum'); // insert 'drum' at 2-index position
+// // myFish is ["angel", "clown", "drum", "mandarin", "sturgeon"]
+//
+// myFish.splice(2, 1); // remove 1 item at 2-index position (that is, "drum")
+// // myFish is ["angel", "clown","mandarin", "sturgeon"]
+
+//end of splice
