@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Study Examples</title>
+    <link rel="stylesheet" href="css/study.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
-<body>
+<body class="gify">
 
+
+<!--this is part of wethaer API-->
+<!--<div>-->
+<!--<h1 class="jumbotron heading">WEATHER API</h1>-->
+<!--</div>-->
+<!--<div>-->
+
+<!--<div id="box">-->
+
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="gif">-->
+
+<!--<div class="sunny"></div>-->
+<!--<div class="cloudy"></div>-->
+<!--<div class="rainy"></div>-->
+<!--<div class="snowy"></div>-->
+<!--<div class="rainbow"></div>-->
+<!--<div class="starry"></div>-->
+<!--<div class="stormy"></div>-->
+<!--<input type="text" placeholder="latitude" class="in-put">-->
+<!--<input type="text" placeholder="longitude" class="in-put">-->
+<!--<button class="in-put">find weather</button>-->
+
+
+<!--</div>-->
+
+
+<!--<div id="map"></div>-->
+
+
+<!--END OF WEATHER API -->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrv_Z3lbhSQ7lH6nhs0gQL2CAmxVMhpX4"></script>
+
+<!--koonami satrt-->
 <!--<h1>hello</h1>-->
 <!--&lt;!&ndash;konami exercise&ndash;&gt;-->
 <!--<header>-->
@@ -14,27 +54,130 @@
 
 <!--end see js-->
 
-<!--diffrent example 2-->
+<!--<!- class=par-different example 2&ndash;&gt;-->
+
 <!--<form action="#">-->
 <!--<input type="text" id="name" name="name>">-->
 <!--<button>submit</button>-->
 <!--</form>-->
 
-<input type="button" id="#press" value="hide">
-<p class="paragraph" id="content">hello look at me</p>
+<!--form<input type="button" id="#press" value="hide">-->
+<!--<p class="paragraph" id="content">hello look at me</p>-->
 
-<!--end 2-->
+<!--end different example 2-->
 
 
-<!--diffent example1-->
+<!--different example1-->
+<!--<div class="container">-->
+<!--<div class="row gif">-->
+<!--<input type="text">-->
+<!--<button id="click">click</button>-->
+<!--</div>-->
+<!--<h1 class="text-center"> Weather API</h1>-->
 <!--<div id="box"></div>-->
+<!--</div>-->
+<!--<div id="background-wrap">-->
+<!--<div class="x1">-->
+<!--<div class="cloud"></div>-->
+<!--</div>-->
+
+<!--<div class="x2">-->
+<!--<div class="cloud"></div>-->
+<!--</div>-->
+
+<!--<div class="x3">-->
+<!--<div class="cloud"></div>-->
+<!--</div>-->
+
+<!--<div class="x4">-->
+<!--<div class="cloud"></div>-->
+<!--</div>-->
+
+<!--<div class="x5">-->
+<!--<div class="cloud"></div>-->
+<!--</div>-->
+<!--</div>-->
 <!--end1-->
+
+
+<!--quiz example to display what i wite on the input  where the h1 is-->
+
+<!--<h1 id="display">Display input value here when button clicked</h1>-->
+
+<!--<input id="value_to_move_to_display" type="text">-->
+<!--<button type="button">Click Me</button>-->
+
+<!--end of quiz example-->
+
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
 <script
         src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
 
 <script>
+
+
+    "use strict"
+
+
+    //
+    <!--quiz example-->
+    //        "use strict"
+    //    $('button').on("click", function(){
+    //        $("#display").text($("#value_to_move_to_display").val());
+    //    });
+    // end of  quiz example
+
+
+    ///-----------------/WEAHER API CARLO --------------------
+
+
+    //    $.get("http://api.openweathermap.org/data/2.5/forecast", {
+    //        APPID: "07099172fe609f5517481eb2e1e81cf4",
+    //        q: "San Antonio, TX",
+    //        cnt: 3,
+    //        units: "imperial"
+    //
+    //    }).done(function (data) {  /* when done call object*/
+    //        console.log(data);
+    //        /*console  data object*/
+    //        data.list.forEach(function (day) {
+    //
+    //
+    //            var html = ""
+    //            var div = "<div class='division'>"
+    //            html += "<h3>" + "<strong>" + parseInt(day.main.temp_max) + " / " + parseInt(day.main.temp_min) + "</strong>" + "</h3>"
+    //            html += "<p class='par'>" + "<img src='http://openweathermap.org/img/w/" + day.weather[0].icon + ".png'>" + "</p>"
+    //            html += "<p class='par'>" + "<strong>" + "humidity: " + day.main.humidity + "</strong>" + "</p>"
+    //            html += "<p class='par'>" + "<strong>" + "wind: " + "</strong>" + day.wind.speed + " mph" + "</p>"
+    //            html += "<p class='par'>" +"<strong>" + "pressure : " + "</strong>" + day.main.pressure + "</p>"
+    //
+    //
+    //            div += html + "</div>"
+    ////            $("div").forEach(function() {
+    ////                $("div").css("border", "1px solid")
+    //
+    ////            })
+    //
+    //
+    //            appendList( div)
+    //
+    //        })
+    //    });
+    //
+    ////
+    //    function appendList(day) {
+    //        $("#box").append(day)
+    //
+    //------------WEAHER API CARLO END JS
+    //    }
+
+
+    // part of koonami code ------------
 
     //    $("h1").hide(5000)
     //    (function () {
@@ -47,8 +190,16 @@
     //
     //
     //    })()
+    //=--------------------------- end koonami code
+
+
+
+
+
+
 
     //   different example 1
+    //
     //
     //
     //
@@ -84,28 +235,29 @@
     //
     //   })();
 
-    // end 1
+    // -----------end 1
+
 
     //    different example 2
-    $("input").click(function () {
-        $("input").attr("value")
-        $("p").toggle();
+    //    $("input").click(function () {
+    //        $("input").attr("value")
+    //        $("p").toggle();
+    //
+    //
+    //        if ($("input").attr("value") == $("input").attr("value", "hide")) {
+    //            ("input").attr("value", "show")
+    //        } else if ($("input").attr("value") == "show") {
+    //            ("input").attr("value", "show")
+    //        }
+    //
+    //    });
 
-
-        if ($("input").attr("value") == "hide") {
-            ("input").attr("value", "show")
-        } else if ($("input").attr("value") == "show") {
-            ("input").attr("value", "hide")
-        }
-
-    });
-
-
+    //-----------end of example 2
 
 
 </script>
+<script src="js/study-examples.js"></script>
 
-<!--end-->
 
 </body>
 </html>

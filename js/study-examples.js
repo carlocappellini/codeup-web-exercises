@@ -1,3 +1,30 @@
+//
+//
+// this is to display google maps api
+//
+//
+//
+// (function() {
+//     "use strict";
+//
+//     // Set our map options
+//     var mapOptions = {
+//         // Set the zoom level
+//         zoom: 19,
+//
+//         // This sets the center of the map at our location
+//         center: {
+//             lat:  29.426791,
+//             lng: -98.489602
+//         }
+//     };
+//
+//     // Render the map
+//     var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+// })();
+// end of google maps api display--------------------
+
+
 // Problems
 //
 // Write a function named isNegative that accepts a number and returns true or false based on whether the input is negative.
@@ -178,7 +205,7 @@
 // })();hoverOut
 
 
-// example 3 turn prpomt to upprtcase
+// example 3 turn propmt to uppercase
 
 // function toUpperCase (message) {
 //     message = prompmessage.toUpperCase
