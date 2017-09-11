@@ -377,3 +377,78 @@
 // // myFish is ["angel", "clown","mandarin", "sturgeon"]
 
 //end of splice
+
+
+// es6 example
+
+"use strict";
+// Block level scope
+// const firstName = "Fer";
+// function printName(name){
+//     let lastName = "Mendoza";
+//     console.log(firstName);
+//     console.log(name);
+//     console.log(lastName);
+// }
+// printName(firstName);
+// //    console.log(lastName);
+// function getLastName(arrayNames){
+//     let str = "";
+//     for(let i = 0; i <  arrayNames.length ; i++ ){
+//         str += arrayNames[i] + " ";
+//     }
+//     return str;
+// }
+// let arrayOfNames = ["Mendoza", "Rodriguez", "Montealegre"];
+// let names = getLastName(arrayOfNames);
+// console.log(names);
+// // Template strings
+// let street = "Navarro 300";
+// let zipCode = 78205;
+// let price = 30;
+// console.log(`${street.toUpperCase()}, San Antonio, TX, ${zipCode}`);
+// let lis = document.getElementsByTagName("li");
+// for(let name of arrayOfNames){
+//     console.log(name);
+// }
+// for(let element of lis){
+//     console.log(element);
+// }
+// //  Current way
+// //    var add = function(a, b){
+// //        return a+ b;
+// //    }
+// // If there's no more than 1 line you don't need the return or {} braces
+// let add = (a, b) => a + b;
+// console.log(add(1,2));
+// //
+// //    function printName(name){
+// //        let lastName = "Mendoza";
+// //        console.log(firstName);
+// //        console.log(name);
+// //        console.log(lastName);
+// //    }
+// // If there's more than one statement in the function then you need to the {} braces
+// let printNameArrow = name => {
+//     let lastName = "Mendoza";
+//     console.log(firstName);
+//     console.log(name);
+//     console.log(lastName);
+// };
+// printNameArrow("Ana");
+// const make = "Nissan";
+// let car = {
+//     // This is just a variable
+//     make,
+//     year: "2017",
+//     model: "Sentra"
+// };
+// // Current way
+// //    var model = car.model;
+// // ES6 way
+// let {year, model} = car;
+// console.log(car);
+// console.log(`${year} ${model}`);
+
+
+//end of es6 example
