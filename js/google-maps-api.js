@@ -24,7 +24,7 @@ var rudys = {lat: 29.4637098, lng: -98.6909647};
 
 //we need zoom and center to display map
 var options = {
-    zoom: 10,
+    zoom: 15,
     center: new google.maps.LatLng(29.426791, -98.489602),
 
     mapTypeId: google.maps.MapTypeId.ROADMAP
@@ -41,7 +41,7 @@ var map = new google.maps.Map(document.getElementById("map"), options);
 var marker1 = new google.maps.Marker({
     position: home,
     map: map,
-    draggable: true,
+    draggable: false,
     animation: google.maps.Animation.BOUNCE,
 
 });
@@ -62,7 +62,7 @@ marker1.addListener('click', function (e) {
 var marker2 = new google.maps.Marker({
     position: rudys,
     map: map,
-    draggable: true,
+    draggable: false,
     animation: google.maps.Animation.DROP,
 
 });
