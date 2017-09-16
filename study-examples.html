@@ -4,10 +4,24 @@
     <meta charset="UTF-8">
     <title>Study Examples</title>
     <link rel="stylesheet" href="css/study.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+    <!--integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
 </head>
-<body class="gify">
+<body id="gify">
+
+<!--example html & js-->
+
+<h1 class="text-center" id="hidden-title" hidden>Hello World</h1>
+
+<button id="show" type="button">show</button>
+<button id="hide" type="button">hide</button>
+
+<!--end of html and js-->
+
+
+<!--questions example with js-->
+<!--<div id="content" hidden>this is bullshit </div>-->
+<!--end of quesitons example with js-->
 
 <!---part of es6 example->
 <!--<li></li>-->
@@ -51,9 +65,14 @@
 
 <!--END OF WEATHER API -->
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrv_Z3lbhSQ7lH6nhs0gQL2CAmxVMhpX4"></script>
 
-<!--koonami satrt-->
+<!--this is google maps api src and key / need js code tp be able to display on borwser as well as css wdth/hght-->
+
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrv_Z3lbhSQ7lH6nhs0gQL2CAmxVMhpX4"></script>-->
+
+<!--end of google maps api -->
+
+<!--koonami start-->
 <!--<h1>hello</h1>-->
 <!--&lt;!&ndash;konami exercise&ndash;&gt;-->
 <!--<header>-->
@@ -125,18 +144,185 @@
         src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-
 <script>
 
 
-    "use strict"
+    //
+    <!--functions hide and show using javacript and jquery-->
+
+    function unHide(elementId) {
+        document.getElementById(elementId).removeAttribute("hidden");
+        document.getElementById(elementId).style.display = "initial";
+        unHide("show")
+
+
+    }
+
+    function hide(elementId) {
+        document.getElementById(elementId).setAttribute("hidden", "true")
+        document.getElementById(elementId).style.display = "none";
+        unHide("hide")
+
+
+    }
+
+    function hideStuff() {
+        hide("hidden-title")
+        hide("hide")
+
+    }
+
+    document.getElementById("hide").addEventListener("click", hideStuff)
+
+
+    function unHideStuff() {
+        unHide("hidden-title")
+        unHide("show")
+    }
+
+    document.getElementById("show").addEventListener("click", unHideStuff)
+
+
+    $("#hidden-title").click(function () {
+        $("#hidden-title").append("<ul><li style='list-style-type: none'>Mars</li></ul>")
+    })
+
+
+    //end of fucntions hide and show
+
+
+    //  this a for loop practice example
+    <!---->
+
+    //let stopNumber = 5;
+    //let random = Math.floor((Math.random();
+    //
+    //for (var i = random; i < 10; i ++) {
+    //    if (i === stopNumber ){
+    //        console.log(stopNumber )
+    //        $("body").css("background-color", "red")
+    //
+    //    } else {
+    //        console.log(i)
+    //    }
+    //
+    //}
+    //
 
 
     //
+    <!---->
+    //example questions number 2 ,see html
+    //    let question = prompt("should i take the bus?")
     //
+    //  switch (question) {
+    //      case "yes":
+    //            alert(question + "go take the bus");
+    //            break;
+    //      case "no":
+    //          alert(question + " take the bus ")
+    //          break;
+    //      case "maybe":
+    //          alert("no money");
+    //          $("#content").css("font-size","40px").fadeIn(4000)
+    //          break;
+    //      default:
+    //          alert("tell your friend togive you a ride")
+    //  }
+    //
+    //       console.log(question)
+
+    //end of example questions number 2 see html
+
+
+    //
+    <!--CARLO QUESTION  FUNCTION-->
+    //
+    //    "use strict"
+    //    function parseIntO (number) {
+    //        return parseInt(number)
+    //    }
+    //    parseIntO()
+    //
+    //    function askUser(input) {
+    //        let user = prompt("what is you name")
+    //        if(user == 0 || '') {
+    //            alert("oops its empty")
+    //        } else {
+    //            alert("hello " + user)
+    //        }
+    //            console.log(user)
+    //
+    //    } askUser()
+    //    function questions(answer) {
+    //        let ans = prompt("what is your favorite food")
+    //        if(ans === "pizza") {
+    //            alert("I like pizza too")
+    //            if ("pizza") {
+    //               let dish = prompt("Do you like pasta ")
+    //                if (dish === "yes") {
+    //                   alert(" OK I LOVE PASTA TOO ")
+    //                    let sauce  = prompt("and what you favoite sauce?")
+    //
+    //                    if (sauce === "pomodoro") {
+    //                       alert("POmodoro is the best")
+    //                    } else if(sauce ==="alfredo") {
+    //                        alert("Yummy with chicken")
+    //                    } else{
+    //                       alert(sauce + " not my favorite")
+    //                    }
+    //                } else  {
+    //                }
+    //            }
+    //        } else {
+    //            alert(ans + " YUCK!!!")
+    //        }
+    //
+    //    } questions()
+
+    // END CARLO QUESTION FUNCTION
+
+
+    //--------- CARLO ARRAY
+    //function numbers() {
+    //    var Array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    //    Array.splice(2, 0, "hello")
+    //    Array.pop()
+    //    Array.push("WORLD")
+    //
+    //    Array.forEach(function (element) {
+    //        console.log(element)
+    //        return Array
+    //
+    //
+    //    })
+    //
+    //    return Array
+    //    console.log(Array)
+    //}
+    //    console.log(numbers())
+    //    //
+    //----END CARLO ARRAY-------
+
+
+    //random number
+    //function getRandom(n) {
+    //    let random = Math.floor((Math.random() * 10) + 1);
+    //    console.log(random)
+    //    if (random === 5) {
+    //        $('body').css("backgroundColor", "red")
+    //    }else{
+    //
+    //    }
+    //
+    //}
+    //getRandom()
+    // end of numbers
+
+    //    //
     //
     <!--quiz example-->
-    //        "use strict"
+    //    //        "use strict"
     //    $('button').on("click", function(){
     //        $("#display").text($("#value_to_move_to_display").val());
     //    });
@@ -209,6 +395,7 @@
 
 
     //   different example 1
+    //
     //
     //
     //
