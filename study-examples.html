@@ -9,6 +9,7 @@
 </head>
 <body id="gify">
 
+
 <!--example html & js-->
 
 <h1 class="text-center" id="hidden-title" hidden>Hello World</h1>
@@ -148,6 +149,22 @@
 
 
     //
+    <!--reversing stuff  needs .split first-->
+
+
+    function reverse(n) {
+        n = n + "";
+        return n.split("").reverse().join()
+
+
+    }
+
+    reverse()
+
+    //    end of reversing stuff needs .split
+
+
+    //
     <!--functions hide and show using javacript and jquery-->
 
     function unHide(elementId) {
@@ -180,11 +197,11 @@
         unHide("show")
     }
 
-    document.getElementById("show").addEventListener("click", unHideStuff)
+    document.getElementById("show").addEventListener("click", unHideStuff);
 
 
     $("#hidden-title").click(function () {
-        $("#hidden-title").append("<ul><li style='list-style-type: none'>Mars</li></ul>")
+        $("#hidden-title").html("<ul><li style='list-style-type: none' id='Mars'>Mars</li></ul>");
     })
 
 
@@ -192,6 +209,7 @@
 
 
     //  this a for loop practice example
+    //
     <!---->
 
     //let stopNumber = 5;
@@ -211,7 +229,20 @@
 
 
     //
-    <!---->
+    //
+    <!--end of loop example -->
+
+
+
+
+
+
+
+
+
+
+
+
     //example questions number 2 ,see html
     //    let question = prompt("should i take the bus?")
     //
@@ -235,6 +266,7 @@
     //end of example questions number 2 see html
 
 
+    //
     //
     <!--CARLO QUESTION  FUNCTION-->
     //
@@ -321,6 +353,7 @@
 
     //    //
     //
+    //
     <!--quiz example-->
     //    //        "use strict"
     //    $('button').on("click", function(){
@@ -403,7 +436,6 @@
     //
     //
     //
-    <!--this code makes color chnage by targerting id and using funtions to chnage the color when we click-->
 
     //    var height = document.getElementById("box").style.height = "300px";
     //    var width = document.getElementById("box").style.width = "300px";
